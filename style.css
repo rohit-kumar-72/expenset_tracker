@@ -1,0 +1,207 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+  :root {
+      --primary: #3a3a3a;
+      --primary-dark: #302d2d;
+      --green: #008104;
+      --red: #ff0000;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      color: white;
+      background-color: var(--primary);
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .main {
+      height: 100vh;
+      display: grid;
+      place-items: center;
+  }
+
+  .box {
+      background-color: var(--primary-dark);
+      /* border: 2px solid white; */
+      width: 400px;
+      height: 600px;
+      padding: 25px;
+      position: absolute;
+  }
+
+  .upper_box {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .upper_box h1 {
+      font-size: 26px;
+  }
+
+  .bal {
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+  }
+
+  .mid_box {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .transactions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      float: left;
+      height: 200px;
+      overflow-y: auto;
+
+  }
+
+  .transaction {
+      background-color: white;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+  }
+
+  .contentt {
+      display: flex;
+  }
+
+  .lower {
+      background-color: white;
+      color: black;
+      padding: 7px;
+      /* box-shadow: 5px 5px #e60a0a9a; */
+      display: none;
+  }
+
+  .showtransaction {
+      display: flex;
+  }
+
+  .icon img {
+      height: 15px;
+      margin-right: 10px;
+  }
+
+  p {
+      font-size: 12px;
+  }
+
+  .left {
+      padding: 7px;
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+      align-items: center;
+  }
+
+  .right {
+      padding: 7px;
+      min-height: 30px;
+      min-width: 30px;
+      place-items: center;
+      display: grid;
+      color: white;
+  }
+
+  .credit {
+      background-color: var(--green);
+  }
+
+  .debit {
+      background-color: var(--red);
+  }
+
+  .bottom_class {
+      background-color: white;
+      color: black;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px 20px;
+  }
+
+  .content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+  }
+
+  .div {
+      display: flex;
+      gap: 10px;
+  }
+
+  label {
+      font-size: 13px;
+      padding-bottom: 3px;
+  }
+
+  .form_control {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .form_control:first-child {
+      flex: 2;
+  }
+
+  input {
+      width: 100%;
+      height: 25px;
+      padding: 10px 5px;
+      outline: 1px solid transparent;
+      border: 1px solid black;
+  }
+
+  input:focus {
+      border: 1px solid var(--primary-dark);
+      outline: 1px solid var(--primary-dark);
+  }
+
+  .btn {
+      display: flex;
+      gap: 0 10px;
+  }
+
+  button {
+      margin-top: 10px;
+      /* background-color: pink; */
+      padding: 10px;
+      font-size: 12px;
+      border: none;
+      width: 50%;
+  }
+
+  .btn button {
+      color: white;
+      opacity: 0.9;
+      transition: 0.3s ease-in-out;
+  }
+
+  .btn button:hover {
+      color: white;
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+  }
+
+  @media(max-width:500px) {
+      .box {
+          width: 95%;
+      }
+  }
